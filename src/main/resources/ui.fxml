@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.primer.githelper.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="575.0" prefWidth="895.0">
+         <children>
+            <TextField fx:id="baseDirText" layoutX="207.0" layoutY="25.0" prefHeight="32.0" prefWidth="650.0" />
+            <Button fx:id="loadBaseDirBtn" layoutX="44.0" layoutY="26.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="136.0" text="加载项目根路径" />
+            <Label layoutX="44.0" layoutY="79.0" prefHeight="32.0" prefWidth="64.0" text="Git账号" />
+            <TextField fx:id="accountText" layoutX="122.0" layoutY="78.0" prefHeight="32.0" prefWidth="136.0" />
+            <Label layoutX="44.0" layoutY="121.0" prefHeight="32.0" prefWidth="73.0" text="开始时间" />
+            <Label layoutX="44.0" layoutY="160.0" prefHeight="32.0" prefWidth="73.0" text="结束时间" />
+            <DatePicker fx:id="startDateText" layoutX="122.0" layoutY="121.0" />
+            <DatePicker fx:id="endDateText" layoutX="122.0" layoutY="160.0" />
+            <TextField fx:id="startTimeText" layoutX="362.0" layoutY="122.0" promptText="时分秒：HH:mm:ss" />
+            <TextField fx:id="endTimeText" layoutX="362.0" layoutY="160.0" promptText="时分秒：HH:mm:ss" />
+            <Label fx:id="exportDirLabel" layoutX="278.0" layoutY="80.0" prefHeight="32.0" prefWidth="109.0" text="Excel导出路径" />
+            <TextField fx:id="exportDirText" layoutX="395.0" layoutY="80.0" prefHeight="32.0" prefWidth="394.0" />
+            <ButtonBar layoutX="592.0" layoutY="192.0" prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button fx:id="showToConsoleBtn" mnemonicParsing="false" text="展示" />
+                  <Button fx:id="exportBtn" mnemonicParsing="false" text="导出" />
+                  <Button fx:id="clearBtn" mnemonicParsing="false" text="清空" />
+              </buttons>
+            </ButtonBar>
+            <TextArea fx:id="console" layoutX="38.0" layoutY="252.0" prefHeight="307.0" prefWidth="820.0" />
+            <Label fx:id="exportTipLabel" layoutX="38.0" layoutY="212.0" prefHeight="30.0" prefWidth="469.0" text="Label" />
+            <Button fx:id="openExportExcelBtn" layoutX="522.0" layoutY="212.0" mnemonicParsing="false" text="打开" />
+            <Button fx:id="saveConfigBtn" layoutX="694.0" layoutY="153.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" text="保存配置" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
